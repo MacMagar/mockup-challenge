@@ -1,0 +1,58 @@
+.footer {
+    &-wrapper {
+    background-color: #0789eb;
+    }
+    color: white;
+
+    @media (min-width: 768px) {
+        flex: 0 0 25rem;
+    }
+
+    &__about {
+        flex: 0 1 100%;
+
+        @media (min-width: 768px) {
+            flex: 0 0 25rem;
+        }
+
+        &-logo {
+            height: 3rem;
+        }
+
+        &-item {
+            list-style-type: none;
+        }
+        &-link {
+            color: white;
+            text-decoration: none;
+        }
+
+        &-heading {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        &-item {
+            margin-top: 1rem;
+
+            &-location {
+                list-style-type: disc;
+                list-style-image: url("../../img/location.png");
+            }
+
+            &-mail {
+                list-style-type: disc;
+                list-style-image: url("../../img/mail.png");
+            }
+        }
+    }
+
+    &__share {
+        &-img {
+            padding: .35rem;
+            border: 1.4px solid white;
+            border-radius:100%;
+            box-sizing: content-box;
+        }
+    }
+}

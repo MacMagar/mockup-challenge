@@ -1,0 +1,31 @@
+.hero {
+
+    &__img {
+        width: 100%;
+        order: 2;
+        max-width: 30rem;
+
+        @media (min-width: 992px) {
+            order: 1;
+        }
+
+    }
+
+    &__about {
+        order: 1;
+        color: white;
+
+        @media (min-width: 992px) {
+            order: 2;
+        }
+
+        &-heading {
+            font-weight: bold;
+            font-size: 3rem;
+        }
+
+        &-para {
+            font-size: 1.3rem;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.testimonial {
+    background-color: #fbfcff;
+    &__text {
+        &-heading {
+            font-size: 2.3rem;
+            font-weight: bold;
+        }
+        &-para {
+            font-size: 1.3rem;
+        }
+    }
+
+    &__user {
+        background-color: white;
+        padding: 2rem;
+        clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 91%);
+        
+        @media (min-width: 576px) {
+            flex: 0 0 33rem;
+        }
+
+        &-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+            
+            &-wrapper {
+                width: 5rem;
+                height: 5rem;
+                border-radius: 100%;
+                display: inline-block;
+            }
+        }
+
+        &-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        &-rating {
+            width: 6rem;
+        }
+
+        &-position {
+            font-style: italic;
+        }
+        &-para {
+            font-size: 1.1rem;
+        }
+    }
+
+}
